@@ -1,0 +1,101 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+FlipBitmapVert | libmerit3d.so
+FileExists(char const*) | libmerit3d.so
+Debug_Flag_Set(char const*, char const*) | triviawhizjr.so
+Menu_AppendLangExt(Locale::Languages, char (&) [255]) | triviawhizjr.so
+DoRegularProcessing() | libmerit3d.so
+debug_check_address(void*) | libmeritbasegame.so
+Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmessagesystem.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | libmerit3d.so
+TextSystem::SetTextDescription(TextDesc const&) | libmerit3d.so
+TriviaClass::GetQuesData(int, int) | triviawhizjr.so
+TriviaClass::GetRandomCat() | triviawhizjr.so
+TriviaClass::GetCategoryStartRecord(int) | triviawhizjr.so
+TriviaClass::GetAmountOfQuestionsInCatX(short) | triviawhizjr.so
+TriviaClass::ReadData(int) | triviawhizjr.so
+TriviaClass::TriviaClass(xml_gamerandom::TrivPICRAND_record*, char*, unsigned char, unsigned char, unsigned char) | triviawhizjr.so
+TriviaClass::~TriviaClass() | triviawhizjr.so
+ChampEditionI::GetCurrentLeaderName(int) | triviawhizjr.so
+CoinJamManager::RegisterCallback(void (*)(bool)) | triviawhizjr.so
+CoinJamManager::UnregisterCallback(void (*)(bool)) | triviawhizjr.so
+CoinJamManager::Instance() | triviawhizjr.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
+MyMeritManager::Instance() | libmeritbasegame.so
+xml_gamerandom::GameSettingsTriviaRandom_record::AdjustTime(int, long) | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::copy(abstract_record const*) | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::AddChild(abstract_xml_record*, char const*, unsigned int) | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::NewChild(char*) | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::GameSettingsTriviaRandom_record() | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::~GameSettingsTriviaRandom_record() | triviawhizjr.so
+ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
+ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
+abstract_metadata::abstract_metadata(char const*, db_common_field_def const*, int, char const*, db_common_index_def const*, int, char const* const*, int, bool) | triviawhizjr.so
+abstract_xml_record::AdjustTimeFields(int, long) | triviawhizjr.so
+abstract_xml_record::AddChild(abstract_xml_record*, char const*, unsigned int) | triviawhizjr.so
+abstract_xml_record::NewChild(char*) | triviawhizjr.so
+abstract_xml_record::ReadFile(char const*, char const*, bool) | triviawhizjr.so
+abstract_xml_record::abstract_xml_record(abstract_xml_record const&) | triviawhizjr.so
+abstract_xml_record::abstract_xml_record() | triviawhizjr.so
+abstract_xml_record::~abstract_xml_record() | triviawhizjr.so
+USBIO::JoystickFound() | libmeritbasegame.so
+Colour::black | libmerit3d.so
+Colour::white | libmerit3d.so
+Locale::LanguageManager::IndexOf(Locale::Languages) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
+Merit3d::RenderToTexture::Destroy() | libmerit3d.so
+Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
+Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
+Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
+Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
+Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
+Merit3d::VideoObjectData::Play() | libmerit3d.so
+Merit3d::VideoObjectData::Stop() | libmerit3d.so
+Merit3d::VideoObjectData::Pause() | libmerit3d.so
+Merit3d::VideoObjectData::Update(float) | libmerit3d.so
+Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
+Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
+Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
+Profiler::DelInstance() | triviawhizjr.so
+Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | triviawhizjr.so
+Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | triviawhizjr.so
+Settings::Init() | triviawhizjr.so
+Settings::Load() | triviawhizjr.so
+Settings::Cleanup() | triviawhizjr.so
+Settings::Restore(abstract_xml_record const*) | triviawhizjr.so
+Settings::Settings(char const*, unsigned int) | triviawhizjr.so
+Settings::~Settings() | triviawhizjr.so
+TextDesc::SetFontName(char const*) | libmerit3d.so
+TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
+TextUtils::MeritStringToUTF8(char const*) | triviawhizjr.so
+MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
+MyMeritManager::Name() const | libmeritbasegame.so
+xml_gamerandom::GameSettingsTriviaRandom_record::ChildCount() const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::GetChildren() const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::cTag() const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::eTag() const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::clone() const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::equal(abstract_record const*) const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::Metadata() const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::ChildName(int) const | triviawhizjr.so
+xml_gamerandom::GameSettingsTriviaRandom_record::not_equal(abstract_record const*) const | triviawhizjr.so
+abstract_xml_record::ChildCount() const | triviawhizjr.so
+abstract_xml_record::GetChildren() const | triviawhizjr.so
+abstract_xml_record::ChildName(int) const | triviawhizjr.so
+Settings::Key(unsigned int, bool) const | triviawhizjr.so
+typeinfo for abstract_record | triviawhizjr.so
+typeinfo for ExtendedCrashInfo | libmeritbasegame.so
+typeinfo for abstract_xml_record | triviawhizjr.so
+typeinfo for Settings | triviawhizjr.so
+typeinfo for xml_gamerandom::GameSettingsTriviaRandom_record | triviawhizjr.so
+__aglXGetProcAddressARB | libmerit3d.so
+allegro_gl_flip | libmerit3d.so
+allegro_gl_flip | triviawhizjr.so
